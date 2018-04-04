@@ -47,7 +47,7 @@ md5sum: 9404560896d6b6533a13ded51516a9ec
 
 然后打开git bash 输入tree --help
 
-#####常用参数
+##### 常用参数
 ```linux
 -a 显示所有文件和目录。
 -A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。
