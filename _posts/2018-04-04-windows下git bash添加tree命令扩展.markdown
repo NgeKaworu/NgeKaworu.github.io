@@ -40,7 +40,7 @@ emmmm...google it
 首先我们要去下一个Tree for Windows  
 [点我下载]  
   
-[这是官网]  
+[这是官网]    
 md5sum: 9404560896d6b6533a13ded51516a9ec  
 下好后解压出来,找到``bin\tree.exe``文件  
 然后放在``你的git文件目录下\usr\bin``下  
