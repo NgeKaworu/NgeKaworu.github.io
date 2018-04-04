@@ -7,10 +7,10 @@ categories: 填坑
 
 ## 动机
 
->git bash是Windows下的命令行工具。
->基于msys GNU环境，有git分布式版本控制工具，也主要用于git。
->GNU环境，就是说如果你喜欢linux/unix的环境，就可以选择使用git bash。
->里面有你熟悉的linux工具，tar，grep，awk等，且可以安装编译环境gcc，make等
+>git bash是Windows下的命令行工具。  
+>基于msys GNU环境，有git分布式版本控制工具，也主要用于git。  
+>GNU环境，就是说如果你喜欢linux/unix的环境，就可以选择使用git bash。  
+>里面有你熟悉的linux工具，tar，grep，awk等，且可以安装编译环境gcc，make等  
 
 
 可是git-bash 居然  
@@ -38,8 +38,9 @@ emmmm...google it
 废话不多说,有能力的可以自己点上面的链接去看看.
 
 首先我们要去下一个Tree for Windows  
-[点我下载]  
-[这是官网]  
+[点我下载]  
+  
+[这是官网]  
 md5sum: 9404560896d6b6533a13ded51516a9ec  
 下好后解压出来,找到``bin\tree.exe``文件  
 然后放在``你的git文件目录下\usr\bin``下  
@@ -47,7 +48,7 @@ md5sum: 9404560896d6b6533a13ded51516a9ec
 
 然后打开git bash 输入tree --help  
 
-##### 常用参数  
+### 常用参数  
 ```linux
 -a 显示所有文件和目录。
 -A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。
