@@ -4,7 +4,9 @@ title: "windows下git bash添加tree命令扩展"
 date: 2018-04-04 13:22:11 +0000
 categories: 填坑
 ---
+
 ## 动机
+
 >git bash是Windows下的命令行工具。
 >基于msys GNU环境，有git分布式版本控制工具，也主要用于git。
 >GNU环境，就是说如果你喜欢linux/unix的环境，就可以选择使用git bash。
@@ -12,9 +14,9 @@ categories: 填坑
 
 
 可是git-bash 居然
-**没有tree命令!!!**
-**没有tree命令!!!**
-**没有tree命令!!!**
+**没有tree命令!!!**  
+**没有tree命令!!!**  
+**没有tree命令!!!**  
 
 window cmd的tree又没有忽略文件夹功能
 
@@ -31,7 +33,8 @@ emmmm...google it
 
 ---
 
-##正文
+## 正文
+
 废话不多说,有能力的可以自己点上面的链接去看看.
 
 首先我们要去下一个Tree for Windows
