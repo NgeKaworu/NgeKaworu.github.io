@@ -7,48 +7,49 @@ categories: 填坑
 
 ## 动机
 
->git bash是Windows下的命令行工具。  
->基于msys GNU环境，有git分布式版本控制工具，也主要用于git。  
->GNU环境，就是说如果你喜欢linux/unix的环境，就可以选择使用git bash。  
->里面有你熟悉的linux工具，tar，grep，awk等，且可以安装编译环境gcc，make等  
+> git bash 是 Windows 下的命令行工具。  
+> 基于 msys GNU 环境，有 git 分布式版本控制工具，也主要用于 git。  
+> GNU 环境，就是说如果你喜欢 linux/unix 的环境，就可以选择使用 git bash。  
+> 里面有你熟悉的 linux 工具，tar，grep，awk 等，且可以安装编译环境 gcc，make 等
 
+可是 git-bash 居然  
+**没有 tree 命令!!!**  
+**没有 tree 命令!!!**  
+**没有 tree 命令!!!**
 
-可是git-bash 居然  
-**没有tree命令!!!**  
-**没有tree命令!!!**  
-**没有tree命令!!!**  
-  
-window cmd的tree又没有忽略文件夹功能
-  
-找遍了百度和github只找到一个treer [仓库地址] 可这个代替品不支持**忽略多个文件夹,作者也不更新了**.  
+window cmd 的 tree 又没有忽略文件夹功能
+
+找遍了百度和 github 只找到一个 treer [仓库地址] 可这个代替品不支持**忽略多个文件夹,作者也不更新了**.
 
 这时我想起了**伯符**临走之前的那句话
->倘内事不决,可问[百度]. 外事不决,可问[谷歌]
 
-emmmm...google it  
-  
-然后...  
-  
-搜索结果的第一条就是[解决方案] (看来微软在国外的占有率也不低啊,~~索尼天下第一~~)
-  
+> 倘内事不决,可问[百度]. 外事不决,可问[谷歌]
+
+emmmm...google it
+
+然后...
+
+搜索结果的第一条就是[解决方案](看来微软在国外的占有率也不低啊,~~索尼天下第一~~)
+
 ---
-  
+
 ## 正文
 
 废话不多说,有能力的可以自己点上面的链接去看看.
 
-首先我们要去下一个Tree for Windows  
-[点我下载]  
-  
-[这是官网]    
+首先我们要去下一个 Tree for Windows  
+[点我下载]
+
+[这是官网]
 md5sum: 9404560896d6b6533a13ded51516a9ec  
-下好后解压出来,找到``bin\tree.exe``文件  
-然后放在``你的git文件目录下\usr\bin``下  
-例如我的是``C:\Program Files\Git\usr\bin``  
+下好后解压出来,找到`bin\tree.exe`文件  
+然后放在`你的git文件目录下\usr\bin`下  
+例如我的是`C:\Program Files\Git\usr\bin`
 
-然后打开git bash 输入tree --help  
+然后打开 git bash 输入 tree --help
 
-### 常用参数  
+### 常用参数
+
 ```linux
 -a 显示所有文件和目录。
 -A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。
@@ -71,10 +72,10 @@ md5sum: 9404560896d6b6533a13ded51516a9ec
 -u 列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。
 -x 将范围局限在现行的文件系统中，若指定目录下的某些子目录，其存放于另一个文件系统上，则将该子目录予以排除在寻找范围外。
 ```
-  
-[百度]:https://www.baidu.com
-[谷歌]:http://google.com
-[仓库地址]:https://github.com/derycktse/treer
+
+[百度]: https://www.baidu.com
+[谷歌]: http://google.com
+[仓库地址]: https://github.com/derycktse/treer
 [解决方案]: https://superuser.com/a/1141489/890933
-[点我下载]:http://downloads.sourceforge.net/gnuwin32/tree-1.5.2.2-bin.zip
-[这是官网]:http://gnuwin32.sourceforge.net/packages/tree.htm
+[点我下载]: http://downloads.sourceforge.net/gnuwin32/tree-1.5.2.2-bin.zip
+[这是官网]: http://gnuwin32.sourceforge.net/packages/tree.htm
