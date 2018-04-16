@@ -11,15 +11,17 @@ categories: 资料整理
 
 * [0. 前言](#0-前言)
 * [1. 正文](#1-正文)
-  _ [1. 1 NodeJs 之 npm](#1-1-nodejs-之-npm)
-  _ [1. 2 webpack 之 脚手架](#1-2-webpack-之-脚手架)
-  _ [1. 2. 1 webpack](#1-2-1-webpack)
-  _ [1. 2. 2 create-react-app](#1-2-2-create-react-app) \* [1. 2. 2 dva-cli](#1-2-2-dva-cli)
+	* [1. 1 NodeJs 之 npm](#1-1-nodejs-之-npm)
+	* [1. 2 webpack 之 脚手架](#1-2-webpack-之-脚手架)
+		* [1. 2. 1 webpack](#1-2-1-webpack)
+		* [1. 2. 2 create-react-app](#1-2-2-create-react-app)
+		* [1. 2. 2 dva-cli](#1-2-2-dva-cli)
 * [2. 个人易用性的一些心得分享](#2-个人易用性的一些心得分享)
-  _ [2. 1 OS 篇](#2-1-os-篇)
-  _ [2. 2 Browser 篇](#2-2-browser-篇)
-  _ [2. 2. 1 chrome 插件分享(基于 chromium 开发的浏览器应该都通用)](#2-2-1-chrome-插件分享基于-chromium-开发的浏览器应该都通用)
-  _ [2. 3 IDE 篇](#2-3-ide篇) \* [2. 4 SE 篇](#2-4-se篇)
+	* [2. 1 OS 篇](#2-1-os-篇)
+	* [2. 2 Browser 篇](#2-2-browser-篇)
+		* [2. 2. 1 chrome 插件分享(基于 chromium 开发的浏览器应该都通用)](#2-2-1-chrome-插件分享基于-chromium-开发的浏览器应该都通用)
+	* [2. 3 IDE 篇](#2-3-ide-篇)
+	* [2. 4 SE 篇](#2-4-se-篇)
 * [3. 动机](#3-动机)
 
 <!-- /code_chunk_output -->
@@ -45,27 +47,27 @@ categories: 资料整理
 
 > **这里我们只讲 npm, 不说 node**
 
-**<font color=#C00000>Q: 什么是 npm? 为什么使用?</font>**
+**<font color=#c00000>Q: 什么是 npm? 为什么使用?</font>**
 
 > Npm 是 JavaScript 的包管理器和世界上最大的软件登记处。 发现可重用代码的包, 并以强大的新方式组装它们.
 >
 > > 摘自 **[官网](https://www.npmjs.com/)**
 
-**<font color=#C00000>Q: 如何安装?</font>**
+**<font color=#c00000>Q: 如何安装?</font>**
 
 > 装好 NodeJS 就可以了.  
 > 怎么装? **[戳这里](https://blog.csdn.net/qq_26562641/article/details/72235585)**  
 > 网上的教程都千篇一律, 我筛选了篇比较新的.
 > **一定要看完**  
- > **一定要看完**  
- > **一定要看完**  
- > **特别是最后淘宝镜像那里 很重要!!!**  
+> **一定要看完**  
+> **一定要看完**  
+> **特别是最后淘宝镜像那里 很重要!!!**
 
-**<font color=#C00000> Q: win10 出现 2503 权限不足?</font>**
+**<font color=#c00000> Q: win10 出现 2503 权限不足?</font>**
 
 > **[参考这个](https://blog.csdn.net/m075097/article/details/74910372)**
 
-**<font color=#C00000> Q: npm 常用命令</font>**
+**<font color=#c00000> Q: npm 常用命令</font>**
 
 > **[参考这个](https://blog.csdn.net/m075097/article/details/74910372)**
 
@@ -73,23 +75,23 @@ categories: 资料整理
 
 #### 1. 2. 1 webpack
 
-**<font color=#C00000> Q: 什么 webpack?</font>**
+**<font color=#c00000> Q: 什么 webpack?</font>**
 
 > 本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。
 >
 > > 摘自 **[官网](https://www.webpackjs.com/concepts/)**
 
-**<font color=#C00000> Q: 能不能说人话?</font>**
+**<font color=#c00000> Q: 能不能说人话?</font>**
 
 > emmmm...  
-> 以下是个人理解  
+> 以下是个人理解
 >
 > > 简单来说, webpack 和脚手架的区别比较像**组装机**和**品牌机**
 > > 复杂点说, 他更像是自己设计**主板**, 电源从哪进来, 经过哪些元件, 完全可以自己配置, 甚至你觉得这个元件不能满足你, 你还能自己写
 
 > **所以应自己根据具体需求选择**
 
-**<font color=#C00000> Q: webpack 怎么入坑?</font>**
+**<font color=#c00000> Q: webpack 怎么入坑?</font>**
 
 > **[入门篇](https://www.jianshu.com/p/42e11515c10f)**
 > 这篇攻略是基于`webpack 3.10.0` 写的笔者整理的时候已经是`webpack 4.5.0`
@@ -98,25 +100,25 @@ categories: 资料整理
 
 #### 1. 2. 2 create-react-app
 
-**<font color=#C00000> Q: 如何安装? 如何使用? </font>**
+**<font color=#c00000> Q: 如何安装? 如何使用? </font>**
 
 > **[官网](https://github.com/facebook/create-react-app)**
- > **<font color=#C00000>win10 请注意: </font>**
+ > **<font color=#c00000>win10 请注意: </font>**
 > 笔者于 2018-04-14, `npm 5.8.0`, 测试官网推荐的 npx 命令, 发现其在 win10 平台上无法运行.还未给出正式修复补丁.
 >
 > > 所以请用`cnpm i -g create-react-app`安装
 > > `create-react-app my-deom` 来创建项目
 
-**<font color=#C00000> Q: 什么? 你问啥是 npx? </font>**
+**<font color=#c00000> Q: 什么? 你问啥是 npx? </font>**
 
 > **[看这里](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)**
 
 #### 1. 2. 2 dva-cli
 
-**<font color=#C00000> Q: 如何安装? 如何使用? </font>**
+**<font color=#c00000> Q: 如何安装? 如何使用? </font>**
 
 > **[官网](https://github.com/dvajs/dva-cli)**
- > **<font color=#C00000>请注意: </font>**
+ > **<font color=#c00000>请注意: </font>**
 >
 > > 笔者整理时 dva-cli 的版本还是`dva-cli 0.9.2`
 > > 可用`cnpm i -g dva-cli@next`
@@ -140,11 +142,11 @@ categories: 资料整理
 
 前些年前端框架还没有那么火, 浏览器之间的差异很容易产生各种奇妙的问题, 近年由于前端框架的火爆, 应对浏览器之间的差异已经被框架替你给做好了, 所以也不多赘述.
 
-**<font color=#C00000> Q: 怎么选择浏览器?</font>**
+**<font color=#c00000> Q: 怎么选择浏览器?</font>**
 
 > 理论上除了 IE 都能拿来用笔者比较喜欢 Chrome(需要科学上网)
 
-**<font color=#C00000> Q: 为什么不推荐使用 IE</font>**
+**<font color=#c00000> Q: 为什么不推荐使用 IE</font>**
 
 > ![日常黑IE](https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/aa18972bd40735fa67d1258d9d510fb30f2408e4.jpg)
 
@@ -176,7 +178,7 @@ categories: 资料整理
 > 倘内事不决可问百度, 外事不决可问谷歌.
 > 可惜谷歌必须科学上网了, 遥想谷歌当年啊.
 
-**<font color=#C00000> Q: 其他的不说下吗?</font>**
+**<font color=#c00000> Q: 其他的不说下吗?</font>**
 
 > ![不说](http://ws2.sinaimg.cn/mw600/82e98952gy1fqa5ki2udmj20u00imdiq.jpg)
 
