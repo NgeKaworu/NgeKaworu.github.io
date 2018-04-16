@@ -24,6 +24,8 @@ github_username:  NgeKaworu
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 theme: minima
 gems:
   - jekyll-feed
