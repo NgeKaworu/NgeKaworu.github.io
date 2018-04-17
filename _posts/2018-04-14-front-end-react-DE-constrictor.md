@@ -25,6 +25,7 @@ categories: 资料整理
 	* [2. 3 IDE 篇](#2-3-ide-篇)
 	* [2. 4 SE 篇](#2-4-se-篇)
 * [3. 动机(其实就是说骚话)](#3-动机其实就是说骚话)
+* [4. 结语](#4-结语)
 
 <!-- /code_chunk_output -->
 
@@ -32,22 +33,20 @@ categories: 资料整理
 
 ### 0. 1 主旨
 
-**笔者旨在, 读者能快速从```非模块化```JS开发过渡到```模块化```JS开发, 不涉及细节讲解, 细节请读者在实践中慢慢了解**
+**本文假设, 读者有前端基础, 并且了解前端`模块化`编程**
 
-**本文是对网上现有的``快速开始``(quickly start)的整合, 因为这很`模块化`**
+**本文旨在, 读者能以最快速度搭建出可用的react开发环境, 不涉及细节讲解, 细节请读者在实践中慢慢了解**
 
-**本文以 Q&A 的格式, 便于记忆和查询, 基本套路是: ``这是啥?`` ``怎么快速开始?`` ``注意事项`` 以及 ``官方文档``**
+**本文是对网上现有的`快速开始`(quickly start)的整合, 因为这很`模块化`**
 
-> 延伸阅读  
-> **[commonJS 模块化历史](https://github.com/seajs/seajs/issues/588)**
+**本文以 Q&A 的格式, 便于记忆和查询, 基本套路是: `这是啥?` `怎么快速开始?` `注意事项` 以及 `官方文档`**
 
 **图自网皆侵删**
 
 ### 0. 2 技术栈
 
-> 现在的前端开发环境一般是基于npm + webpack搭建的. npm负责装包, webpack负责打包. 
-> 接下来会通过一些成熟的攻略让大家``快速开始``起来
-> 作者已经将【着重】部分标注出来, 请务必去实践. 其他均为扩展阅读.
+> 现在的前端开发环境一般是基于 npm + webpack 搭建的. npm 负责装包, webpack 负责打包.
+> 接下来会通过一些成熟的攻略让大家`快速开始`起来作者已经将【着重】部分标注出来, 请务必去实践. 其他均为扩展阅读.
 > **一定要边看边跟着做**  
 > **一定要边看边跟着做**  
 > **一定要边看边跟着做**  
@@ -59,7 +58,7 @@ categories: 资料整理
 
 ### 1. 1 npm 篇
 
-**<font color="#c00000">Q: 什么是npm?</font>**
+**<font color="#c00000">Q: 什么是 npm?</font>**
 
 > Npm 是 JavaScript 的包管理器和世界上最大的软件注册表。 发现可重用代码的包, 并以强大的新方式组装它们.
 >
@@ -67,7 +66,7 @@ categories: 资料整理
 
 **<font color="#c00000">Q: 如何快速开始?</font>**
 
-**[戳这里【着重】](https://blog.csdn.net/qq_26562641/article/details/72235585)**  
+**[戳这里【着重】](https://blog.csdn.net/qq_26562641/article/details/72235585)**
 
 **<font color="#c00000"> Q: win10 出现 2503 权限不足?</font>**
 
@@ -85,7 +84,6 @@ categories: 资料整理
 >
 > > 摘自 **[官网](https://www.webpackjs.com/concepts/)**
 
-
 **<font color="#c00000"> Q: webpack 怎么快速开始?</font>**
 
 > **[入门篇【着重】](https://www.jianshu.com/p/42e11515c10f)**
@@ -94,21 +92,28 @@ categories: 资料整理
  > **[区别看这里](https://github.com/webpack/webpack/releases)**
  > **[官中文档](https://www.webpackjs.com/concepts/)**
 
-
-### 1. 3 脚手架篇 
+### 1. 3 脚手架篇
 
 **<font color="#c00000"> Q: 什么是脚手架? </font>**
 
 > 以下是个人理解
-> > 简单来说, 使用npm + webpack搭建环境就像自己配一台**组装机**, 而用脚手架搭就比较像厂商配好的**品牌机**
+>
+> > 简单来说, 使用 npm + webpack 搭建环境就像自己配一台**组装机**, 而用脚手架搭就比较像厂商配好的**品牌机**
+> >
+> > |          | npm + webpack |  第三方脚手架  |
+> > | :------- | :-----------: | :------------: |
+> > | 自由度   |      高       | 根据第三方而定 |
+> > | 性能     |  熟练度而定   |   第三方负责   |
+> > | 时间成本 |  熟练度而定   |    开箱即用    |
 
-> **所以应自己根据具体需求选择. 下面介绍react方向的两个脚手架**
+> **所以应自己根据具体需求选择相应的方法.
+> 下面介绍 react 方向的两个脚手架**
 
 #### 1. 3. 1 create-react-app
 
 **<font color="#c00000"> Q: 如何安装? 如何使用? </font>**
 
-> **[官方repo地址](https://github.com/facebook/create-react-app)**
+> **[官方 repo 地址](https://github.com/facebook/create-react-app)**
  > **<font color="#c00000">win10 请注意: </font>**
 > 笔者于 2018-04-14, `npm 5.8.0`版本下, 测试官网推荐的 npx 命令, 发现其在 win10 平台上无法运行.官方还未给出正式修复补丁.
 >
@@ -123,7 +128,7 @@ categories: 资料整理
 
 **<font color="#c00000"> Q: 如何安装? 如何使用? </font>**
 
-> **[官方repo地址](https://github.com/dvajs/dva-cli)**
+> **[官方 repo 地址](https://github.com/dvajs/dva-cli)**
  > **<font color="#c00000">请注意: </font>**
 >
 > > 笔者整理时 dva-cli 的版本还是`dva-cli 0.9.2`
@@ -185,6 +190,7 @@ categories: 资料整理
 > 可惜谷歌必须科学上网了, 遥想谷歌当年啊.
 
 **<font color="#c00000"> Q: 其他的不说下吗?</font>**
+
 > ![对方不想说话,并且向你扔了一张图片](http://ws2.sinaimg.cn/mw600/82e98952gy1fqa5ki2udmj20u00imdiq.jpg)
 
 ---
@@ -220,3 +226,13 @@ categories: 资料整理
 #NPM {ignore=true}
 
 ---
+
+## 4. 结语
+
+本文到这里就结束了, 感谢收看.
+
+笔者其实是先入的 ES6 坑, 才去了解的模块化 JS 编程, 起初只是觉得这个写法跟 include 很像, 所以很自然就会用了.
+
+> **[延伸阅读 commonJS 模块化历史](https://github.com/seajs/seajs/issues/588)**
+
+好了, 其实笔者并不懂前端, 我只是给 github 做搬运的. 前面都是我编的, 我实在编不下去了.
