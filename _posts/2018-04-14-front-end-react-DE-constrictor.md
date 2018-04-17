@@ -10,58 +10,64 @@ categories: 资料整理
 <!-- code_chunk_output -->
 
 * [0. 前言](#0-前言)
+	* [0. 1 主旨](#0-1-主旨)
+	* [0. 2 技术栈](#0-2-技术栈)
 * [1. 正文](#1-正文)
-	* [1. 1 NodeJs 之 npm](#1-1-nodejs-之-npm)
-	* [1. 2 webpack 之 脚手架](#1-2-webpack-之-脚手架)
-		* [1. 2. 1 webpack](#1-2-1-webpack)
-		* [1. 2. 2 create-react-app](#1-2-2-create-react-app)
-		* [1. 2. 2 dva-cli](#1-2-2-dva-cli)
-* [2. 个人易用性的一些心得分享](#2-个人易用性的一些心得分享)
+	* [1. 1 npm 篇](#1-1-npm-篇)
+	* [1. 2 webpack 篇](#1-2-webpack-篇)
+	* [1. 3 脚手架篇](#1-3-脚手架篇)
+		* [1. 3. 1 create-react-app](#1-3-1-create-react-app)
+		* [1. 3. 2 dva-cli](#1-3-2-dva-cli)
+* [2. 个人易用性的一些心得分享(其实就是说闲话)](#2-个人易用性的一些心得分享其实就是说闲话)
 	* [2. 1 OS 篇](#2-1-os-篇)
 	* [2. 2 Browser 篇](#2-2-browser-篇)
 		* [2. 2. 1 chrome 插件分享(基于 chromium 开发的浏览器应该都通用)](#2-2-1-chrome-插件分享基于-chromium-开发的浏览器应该都通用)
 	* [2. 3 IDE 篇](#2-3-ide-篇)
 	* [2. 4 SE 篇](#2-4-se-篇)
-* [3. 动机](#3-动机)
+* [3. 动机(其实就是说骚话)](#3-动机其实就是说骚话)
 
 <!-- /code_chunk_output -->
 
 ## 0. 前言
 
-**本文仅适合不大了解 JS 模块化开发、开发环境搭建的受众用于参考**
+### 0. 1 主旨
 
-**本文多是对网络现有攻略的整合, 因为这很`模块化`**
+**笔者旨在, 读者能快速从```非模块化```JS开发过渡到```模块化```JS开发, 不涉及细节讲解, 细节请读者在实践中慢慢了解**
 
-**本文多以 Q&A 的方式, 便于查找问题关键**
+**本文是对网上现有的``快速开始``(quickly start)的整合, 因为这很`模块化`**
+
+**本文以 Q&A 的格式, 便于记忆和查询, 基本套路是: ``这是啥?`` ``怎么快速开始?`` ``注意事项`` 以及 ``官方文档``**
 
 > 延伸阅读  
 > **[commonJS 模块化历史](https://github.com/seajs/seajs/issues/588)**
 
 **图自网皆侵删**
 
+### 0. 2 技术栈
+
+> 现在的前端开发环境一般是基于npm + webpack搭建的. npm负责装包, webpack负责打包. 
+> 接下来会通过一些成熟的攻略让大家``快速开始``起来
+> 作者已经将【着重】部分标注出来, 请务必去实践. 其他均为扩展阅读.
+> **一定要边看边跟着做**  
+> **一定要边看边跟着做**  
+> **一定要边看边跟着做**  
+> happy hacking
+
 ---
 
 ## 1. 正文
 
-### 1. 1 NodeJs 之 npm
+### 1. 1 npm 篇
 
-> **这里我们只讲 npm, 不说 node**
-
-**<font color="#c00000">Q: 什么是 npm? 为什么使用?</font>**
+**<font color="#c00000">Q: 什么是npm?</font>**
 
 > Npm 是 JavaScript 的包管理器和世界上最大的软件注册表。 发现可重用代码的包, 并以强大的新方式组装它们.
 >
 > > 摘自 **[官网](https://www.npmjs.com/)**
 
-**<font color="#c00000">Q: 如何安装?</font>**
+**<font color="#c00000">Q: 如何快速开始?</font>**
 
-> 装好 NodeJS 就可以了.  
-> 怎么装? **[戳这里](https://blog.csdn.net/qq_26562641/article/details/72235585)**  
-> 网上的教程都千篇一律, 我筛选了篇比较新的.  
-> **一定要看完**  
-> **一定要看完**  
-> **一定要看完**  
-> **特别是最后淘宝镜像那里 很重要!!!**
+**[戳这里【着重】](https://blog.csdn.net/qq_26562641/article/details/72235585)**  
 
 **<font color="#c00000"> Q: win10 出现 2503 权限不足?</font>**
 
@@ -69,11 +75,9 @@ categories: 资料整理
 
 **<font color="#c00000"> Q: npm 常用命令</font>**
 
-> **[参考这个](https://blog.csdn.net/m075097/article/details/74910372)**
+> **[参考这个【着重】](https://blog.csdn.net/m075097/article/details/74910372)**
 
-### 1. 2 webpack 之 脚手架
-
-#### 1. 2. 1 webpack
+### 1. 2 webpack 篇
 
 **<font color="#c00000"> Q: 什么 webpack?</font>**
 
@@ -81,31 +85,32 @@ categories: 资料整理
 >
 > > 摘自 **[官网](https://www.webpackjs.com/concepts/)**
 
-**<font color="#c00000"> Q: 能不能说人话?</font>**
 
-> emmmm...  
-> 以下是个人理解
->
-> > 简单来说, webpack 和脚手架的区别比较像**组装机**和**品牌机**
-> > 复杂点说, 他更像是自己设计**主板**, 电源从哪进来, 经过哪些元件, 完全可以自己配置, 甚至你觉得这个元件不能满足你, 你还能自己写
+**<font color="#c00000"> Q: webpack 怎么快速开始?</font>**
 
-> **所以应自己根据具体需求选择**
-
-**<font color="#c00000"> Q: webpack 怎么入坑?</font>**
-
-> **[入门篇](https://www.jianshu.com/p/42e11515c10f)**
+> **[入门篇【着重】](https://www.jianshu.com/p/42e11515c10f)**
 > 这篇攻略是基于`webpack 3.10.0` 写的.
 > 笔者整理的时候已经是`webpack 4.5.0`
  > **[区别看这里](https://github.com/webpack/webpack/releases)**
  > **[官中文档](https://www.webpackjs.com/concepts/)**
 
-#### 1. 2. 2 create-react-app
+
+### 1. 3 脚手架篇 
+
+**<font color="#c00000"> Q: 什么是脚手架? </font>**
+
+> 以下是个人理解
+> > 简单来说, 使用npm + webpack搭建环境就像自己配一台**组装机**, 而用脚手架搭就比较像厂商配好的**品牌机**
+
+> **所以应自己根据具体需求选择. 下面介绍react方向的两个脚手架**
+
+#### 1. 3. 1 create-react-app
 
 **<font color="#c00000"> Q: 如何安装? 如何使用? </font>**
 
-> **[官网](https://github.com/facebook/create-react-app)**
+> **[官方repo地址](https://github.com/facebook/create-react-app)**
  > **<font color="#c00000">win10 请注意: </font>**
-> 笔者于 2018-04-14, `npm 5.8.0`, 测试官网推荐的 npx 命令, 发现其在 win10 平台上无法运行.还未给出正式修复补丁.
+> 笔者于 2018-04-14, `npm 5.8.0`版本下, 测试官网推荐的 npx 命令, 发现其在 win10 平台上无法运行.官方还未给出正式修复补丁.
 >
 > > 所以请用`cnpm i -g create-react-app`安装
 > > `create-react-app my-deom` 来创建项目
@@ -114,11 +119,11 @@ categories: 资料整理
 
 > **[看这里](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)**
 
-#### 1. 2. 2 dva-cli
+#### 1. 3. 2 dva-cli
 
 **<font color="#c00000"> Q: 如何安装? 如何使用? </font>**
 
-> **[官网](https://github.com/dvajs/dva-cli)**
+> **[官方repo地址](https://github.com/dvajs/dva-cli)**
  > **<font color="#c00000">请注意: </font>**
 >
 > > 笔者整理时 dva-cli 的版本还是`dva-cli 0.9.2`
@@ -128,7 +133,7 @@ categories: 资料整理
 
 ---
 
-## 2. 个人易用性的一些心得分享
+## 2. 个人易用性的一些心得分享(其实就是说闲话)
 
 ### 2. 1 OS 篇
 
@@ -184,9 +189,7 @@ categories: 资料整理
 
 ---
 
-## 3. 动机
-
-（太长可不看，笔者用来整理思路的）
+## 3. 动机(其实就是说骚话)
 
 一开始让我整理篇 web 前端开发环境攻略时, 其实我是拒绝的, 因为真的没什么好写的.
 
