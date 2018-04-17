@@ -30,7 +30,7 @@ categories: 资料整理
 
 **本文仅适合不大了解 JS 模块化开发、开发环境搭建的受众用于参考**
 
-**本文多是对网络现有攻略的整合, 因为这很符合`模块化`的规范**
+**本文多是对网络现有攻略的整合, 因为这很`模块化`**
 
 **本文多以 Q&A 的方式, 便于查找问题关键**
 
@@ -49,7 +49,7 @@ categories: 资料整理
 
 **<font color="#c00000">Q: 什么是 npm? 为什么使用?</font>**
 
-> Npm 是 JavaScript 的包管理器和世界上最大的软件登记处。 发现可重用代码的包, 并以强大的新方式组装它们.
+> Npm 是 JavaScript 的包管理器和世界上最大的软件注册表。 发现可重用代码的包, 并以强大的新方式组装它们.
 >
 > > 摘自 **[官网](https://www.npmjs.com/)**
 
@@ -57,7 +57,7 @@ categories: 资料整理
 
 > 装好 NodeJS 就可以了.  
 > 怎么装? **[戳这里](https://blog.csdn.net/qq_26562641/article/details/72235585)**  
-> 网上的教程都千篇一律, 我筛选了篇比较新的.
+> 网上的教程都千篇一律, 我筛选了篇比较新的.  
 > **一定要看完**  
 > **一定要看完**  
 > **一定要看完**  
@@ -94,7 +94,8 @@ categories: 资料整理
 **<font color="#c00000"> Q: webpack 怎么入坑?</font>**
 
 > **[入门篇](https://www.jianshu.com/p/42e11515c10f)**
-> 这篇攻略是基于`webpack 3.10.0` 写的笔者整理的时候已经是`webpack 4.5.0`
+> 这篇攻略是基于`webpack 3.10.0` 写的.
+> 笔者整理的时候已经是`webpack 4.5.0`
  > **[区别看这里](https://github.com/webpack/webpack/releases)**
  > **[官中文档](https://www.webpackjs.com/concepts/)**
 
@@ -179,8 +180,7 @@ categories: 资料整理
 > 可惜谷歌必须科学上网了, 遥想谷歌当年啊.
 
 **<font color="#c00000"> Q: 其他的不说下吗?</font>**
-
-> ![不说](http://ws2.sinaimg.cn/mw600/82e98952gy1fqa5ki2udmj20u00imdiq.jpg)
+> ![对方不想说话,并且向你扔了一张图片](http://ws2.sinaimg.cn/mw600/82e98952gy1fqa5ki2udmj20u00imdiq.jpg)
 
 ---
 
